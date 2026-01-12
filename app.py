@@ -4,7 +4,7 @@ import plotly.express as px
 from datetime import datetime
 
 # --- CONFIGURATION & PATH ---
-DATA_PATH = r"C:\Users\michael.sidabutar\Documents\analisis ikpa 2025\rpata\dataset.csv"
+DATA_PATH = r"dataset.csv"
 
 st.set_page_config(page_title="Pemantauan RPATA 2025", layout="wide")
 
@@ -228,4 +228,5 @@ if check_password():
             fig_sup_cnt.update_layout(yaxis={'categoryorder':'total ascending'}, showlegend=False)
             st.plotly_chart(fig_sup_cnt, use_container_width=True)
             st.dataframe(t_cnt, use_container_width=True, hide_index=True)
+
 
